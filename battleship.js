@@ -117,9 +117,7 @@ var controller = {
 
       if (hit && model.shipsSunk === model.numShips) {
         view.displayMessage("You sunk all my battleships");
-        setTimeout(function () {
-          gameOver();
-        }, 5000);
+        setTimeout(gameOver, 5000);
       }
     }
   },
